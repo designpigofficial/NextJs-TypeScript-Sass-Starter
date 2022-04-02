@@ -1,5 +1,7 @@
 import { Button } from "@mui/material";
 import{useState, useEffect} from "react";
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function TopButton() {
 
@@ -28,8 +30,8 @@ export default function TopButton() {
     }, [])
 
     return (
-        <Button className={show ? `visibleButton iconButton` : `hiddenButton iconButton`} onClick={() => scrollTop()} id="topButton" title="Scroll to top">
-           <i className="fas fa-chevron-up"></i>
+        <Button className={show ? `visibleButton` : `hiddenButton`} onClick={() => scrollTop()} id="topButton" title="Scroll to top">
+           <FontAwesomeIcon className="upArrow" icon={faChevronUp} />
         </Button>
     )
 }

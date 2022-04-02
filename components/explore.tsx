@@ -1,4 +1,7 @@
 import { Button } from '@mui/material';
+// Import the FontAwesomeIcon component
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Explore() {
     return (
@@ -6,7 +9,7 @@ export default function Explore() {
             <div className="innerExplore">
                 <p>Explore</p>
                 <Button className="arrow lightBtn" title="Explore">
-                    <i className="fas fa-chevron-right"></i>
+                    <FontAwesomeIcon icon={faChevronRight} />
                 </Button>
             </div>
         </div>

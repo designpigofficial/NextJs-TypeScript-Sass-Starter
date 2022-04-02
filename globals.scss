@@ -236,7 +236,7 @@ main {
     div {
       cursor: pointer;
       transition: var(--transition);
-      i {
+      svg {
         &:hover {
           transition: var(--transition);
           color: var(--primary) !important;
@@ -270,7 +270,7 @@ main {
       }
     }
     .search {
-      i {
+      svg {
         font-size: 20px;
         color: var(--font);
       }
@@ -439,6 +439,8 @@ main {
   background: var(--font) !important;
   transition: var(--transition) !important;
   .upArrow {
+    bottom: -3px;
+    position: relative;
     transition: var(--transition) !important;
   }
   &:active {
@@ -589,7 +591,7 @@ div[role="presentation"] {
           font-weight: 700;
         }
       }
-      i {
+      svg {
         font-size: 0.85em;
       }
     }
@@ -605,78 +607,85 @@ div[role="presentation"] {
   justify-content: space-between;
 }
 
-.innerMenu {
-  padding: 1em 2.5em 1em 1em;
-  display: flex;
-  font-size: 16px;
-  grid-gap: 0.65em;
-  flex-direction: column;
-  align-items: flex-start;
-  animation: fadeIn 1000ms ease-in-out;
-  a[title="Home"] {
-    grid-gap: 0.1em;
-    font-size: 20px !important;
-    transition: var(--transition);
-    &:hover {
-      color: var(--primary) !important;
-    }
-  }
-  .mobileLogout {
-    font-size: 1em !important;
-    background: var(--font) !important;
-    color: var(--bg) !important;
-    margin-top: 1em !important;
-    grid-gap: 0.3em;
-    transition: var(--transition);
-    &:hover {
-      background: var(--primary) !important;
-    }
-  }
-  .firstLink {
-    padding-top: 1em;
-  }
-  li {
-    padding-left: 1em;
-    padding-right: 1em;
-    list-style: none;
-  }
-  a {
-    width: 100%;
-    font-size: 16px;
-    text-align: left;
-    text-decoration: none;
-    grid-gap: 0.4em;
-    font-family: "Nunito";
-    font-weight: 700;
-    color: var(--font) !important;
-    &:first-child {
-      width: 100%;
-      text-align: center;
-    }
-    i {
-      color: var(--primary);
-      font-size: 14px;
-      min-width: 17px;
-    }
-  }
-}
-
-.menuFooter {
-  padding: 1em 1em 2em 2em;
-  display: flex;
-  font-size: 16px;
-  grid-gap: 0.65em;
-  flex-direction: column;
-  align-items: flex-start;
+.menu {
   width: 100%;
-  animation: fadeIn 1s ease-in-out;
-  a {
-    font-size: 16px !important;
-    color: var(--font);
-    font-family: "Nunito";
-    font-weight: 700;
-    i {
-      color: var(--primary);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em 1.5em 1em 1em;
+  justify-content: space-between;
+  background: white !important;
+  .innerMenu {
+    display: flex;
+    font-size: 16px;
+    grid-gap: 0.65em;
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 1em 2.5em 1em 1em;
+    animation: fadeIn 1000ms ease-in-out;
+    a[title="Home"] {
+      left: -12px;
+      grid-gap: 0.1em;
+      position: relative;
+      font-size: 20px !important;
+      transition: var(--transition);
+      &:hover {
+        color: var(--primary) !important;
+      }
+    }
+    .mobileLogout {
+      font-size: 1em !important;
+      background: var(--font) !important;
+      color: var(--bg) !important;
+      margin-top: 1em !important;
+      grid-gap: 0.3em;
+      transition: var(--transition);
+      &:hover {
+        background: var(--primary) !important;
+      }
+    }
+    .firstLink {
+      padding-top: 1em;
+    }
+    a {
+      width: 100%;
+      font-size: 16px;
+      text-align: left;
+      text-decoration: none;
+      grid-gap: 0.4em;
+      font-family: "Nunito";
+      font-weight: 700;
+      color: var(--font) !important;
+      &:first-child {
+        width: 100%;
+        text-align: center;
+      }
+      svg {
+        color: var(--primary);
+        font-size: 14px;
+        min-width: 17px;
+      }
+    }
+  }
+  
+  .menuFooter {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    grid-gap: 0.65em;
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 1em 1em 2em 2em;
+    animation: fadeIn 1s ease-in-out;
+    a {
+      font-size: 16px !important;
+      color: var(--font);
+      font-family: "Nunito";
+      font-weight: 700;
+      svg {
+        color: var(--primary);
+      }
     }
   }
 }
