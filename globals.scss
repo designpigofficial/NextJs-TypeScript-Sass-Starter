@@ -730,6 +730,12 @@ a[title="Home"] {
   }
 }
 
+@media (min-width: 1365px) {
+  .mainSpace {
+    left: -70px;
+  }
+}
+
 @media (max-width: 1365px) and (min-width: 987px) {
   .mainSpace {
     margin-top: -250px;

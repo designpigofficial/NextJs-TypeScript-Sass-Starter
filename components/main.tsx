@@ -5,7 +5,7 @@ import { Modal } from '@mui/material';
 import { useState, Fragment } from 'react';
 import ScrollToDiscover from './scrollToDiscover';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import { IonCol, IonGrid, IonRow } from '../../server/ionicImports';
+import { IonCol, IonGrid, IonRow } from '../server/ionicImports';
 
 export default function Main() {
 

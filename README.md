@@ -1,10 +1,10 @@
 #### This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Next.Js Typescript Starter Template
+# Next.Js Typescript Sass Starter
 
 Created a successful Next.js with Sass/TypeScript starter template ready made for deployment to Heroku with all the packages and dependencies I normally use. Will probably use this to make my new updated portfolio.
 
-![Screenshot of Home](./public/assets/nextjs-typescript-starter2.png)
+![Screenshot of Home](./public/assets/nextjs-typescript-sass-starter3.png)
 
 ## Table of Contents
 

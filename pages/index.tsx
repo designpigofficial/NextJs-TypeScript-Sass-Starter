@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Head from "next/head";
-import Main from "./components/main";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Signup from "./components/signup";
-import TopButton from "./components/topButton";
+import Main from "../components/main";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Signup from "../components/signup";
+import TopButton from "../components/topButton";
 
 export default function Home() {
   return (
