@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import { Button } from '@mui/material';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Link from "next/link";
+import { Button } from "@mui/material";
+import { LazyLoadImage } from "../imports";
 
 export default function MobileMenu() {
 
@@ -9,7 +9,7 @@ export default function MobileMenu() {
 
     return (
         <>
-        <ul className='innerMenu'>
+        <ul className="innerMenu">
             <Link href={`/`}>
                 <a title="Home">
                     <LazyLoadImage effect="blur" src={`/assets/GherkinLogo.svg`} id={`logo`} className="logo" alt={`logo`} width={`100%`} height={`auto`} />
@@ -18,22 +18,22 @@ export default function MobileMenu() {
             </Link>
             <li className="navigation-tab firstLink">
                 <Link href={`/`}>
-                <a className="current active hoverLink" href="./"><i className="fas fa-home"></i> Home</a>
+                    <a className="current active hoverLink" href="./"><i className="fas fa-home"></i> Home</a>
                 </Link>
             </li>
             <li className="navigation-tab">
                 <Link href={`/profile`}>
-                <a className="hoverLink" href="./profile" title='Profile'><i className="fas fa-user"></i> Profile</a>
+                    <a className="hoverLink" href="./profile" title="Profile"><i className="fas fa-user"></i> Profile</a>
                 </Link>
             </li>
             <li className="navigation-tab">
-                <Link href={`/files`}>
-                <a className="hoverLink" href="./files" title='Files'><i className="fas fa-file"></i> Files</a>
-                </Link>
+                <a className="hoverLink" target={`_blank`} href="https://github.com/strawhat19/NextJs-TypeScript-Sass-Starter" title="Projects">
+                    <i className="fas fa-file"></i> Projects
+                </a>
             </li>
             <li className="navigation-tab">
-            <Button
-                    className='logoutButton mobileLogout'
+                <Button
+                    className="logoutButton mobileLogout"
                     title="Log Out"
                     style={{
                         color: `white`,

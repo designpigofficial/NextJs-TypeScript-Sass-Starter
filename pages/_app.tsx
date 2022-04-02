@@ -1,12 +1,5 @@
 import '../globals.scss';
-import React, { FC } from "react";
-declare global { 
-  interface Component {
-    [key: string]: any
-  }
-  interface pageProps {
-    [key: string]: any
-  }
-}
-const MyApp: FC<Component> = ({ Component, pageProps }) => <Component {...pageProps} />;
+import * as React from "react";
+import type { AppProps } from 'next/app';
+const MyApp: React.FC<any> = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />;
 export default MyApp

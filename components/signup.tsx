@@ -1,5 +1,4 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { IonCol, IonGrid, IonLabel, IonRow } from '../server/ionicImports';
+import { IonCol, IonGrid, IonLabel, IonRow, LazyLoadImage } from '../imports';
 export default function Signup() {
   return (
     <div className='signup signupCont' id="signup">
