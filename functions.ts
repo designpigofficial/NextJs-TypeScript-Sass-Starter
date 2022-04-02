@@ -1,4 +1,9 @@
 import dynamic from 'next/dynamic';
+export const getWindowSize = (width:any, setWidth: any) => {
+  console.log(`Window Size`, width);
+  window.addEventListener('resize', () => setWidth(window.innerWidth));
+  return () => window.removeEventListener('resize', () => setWidth(window.innerWidth));
+};
 export const LazyLoadImage = dynamic(async () => {
     const mod = await import('react-lazy-load-image-component');
     return mod.LazyLoadImage;

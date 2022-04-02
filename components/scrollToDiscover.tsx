@@ -1,10 +1,8 @@
 export default function ScrollToDiscover() {
-
     const scrollBottom = () => {
         window.scrollTo(0,document.body.scrollHeight); // For Safari
         window.scrollTo(0,document.documentElement.scrollHeight); // For Chrome, Firefox, IE and Opera
       }
-      
     return (
         <div className="scrollToDiscover" onClick={() => scrollBottom()} title="Scroll To Discover">
             <div className="arrowDown">

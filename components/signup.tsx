@@ -1,4 +1,4 @@
-import { IonCol, IonGrid, IonLabel, IonRow, LazyLoadImage } from '../imports';
+import { IonCol, IonGrid, IonLabel, IonRow, LazyLoadImage } from '../functions';
 export default function Signup() {
   return (
     <div className='signup signupCont' id="signup">

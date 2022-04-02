@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@mui/material';
-import { LazyLoadImage } from '../imports';
+import { LazyLoadImage } from '../functions';
 export default function Header() {
     return (
         <header>

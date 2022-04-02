@@ -333,8 +333,10 @@ main {
           flex-direction: column;
           margin-top: 0;
           margin-bottom: 0.1em;
-          .bottom {
+          .bottomText {
             padding-left: 0.5em;
+            position: relative;
+            right: -30px;
           }
         }
         p {

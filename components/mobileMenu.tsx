@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@mui/material";
-import { LazyLoadImage } from "../imports";
+import { LazyLoadImage } from "../functions";
 import { faFile, faSignOut, faHouseChimneyUser, faUserTie, faCopyright, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
