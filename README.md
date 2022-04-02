@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Next.Js Typescript Starter Template
 
-Next.Js Typescript Starter Template
+Created a successful Next.js with Sass/TypeScript starter template ready made for deployment to Heroku with all the packages and dependencies I normally use. Will probably use this to make my new updated portfolio.
 
 ![Screenshot of Home](./public/designs/nextjs-typescript-starter1.png)
 
@@ -23,8 +23,8 @@ You can view the deployed application at https://nextjs-typescript-starter.herok
 npm install
 then
 npm run dev
-# or
-yarn dev
+#or
+npm run init
 ```
 
 ## Licensing
