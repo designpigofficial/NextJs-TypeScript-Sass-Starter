@@ -13,7 +13,7 @@ export default function MobileMenu() {
             <Link href={`/`}>
                 <a title="Home">
                     <LazyLoadImage effect="blur" src={`/assets/GherkinLogo.svg`} id={`logo`} className="logo" alt={`logo`} width={`100%`} height={`auto`} />
-                    Rakib
+                    Next.js
                 </a>
             </Link>
             <li className="navigation-tab firstLink">
@@ -47,7 +47,7 @@ export default function MobileMenu() {
         </ul>
         <div className="menuDash menuFooter">
             <div className="nameText">
-                <a className="customLink hoverLink" target={`_blank`} href="https://github.com/strawhat19/NextJs-LandingPage" title="Next.js Starter"><i className="fab fa-github"></i> Next.js Starter</a>
+                <a className="customLink hoverLink" target={`_blank`} href="https://github.com/strawhat19/NextJsTypescriptStarterTemplate" title="Next.js Starter"><i className="fab fa-github"></i> Next.js Starter</a>
             </div>
             <div className="siteText copyright" title="Copyright">
                 <a href="./" className="hoverLink"><i className="fas fa-copyright"></i> {year}</a>
