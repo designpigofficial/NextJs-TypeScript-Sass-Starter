@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@mui/material';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
 export default function Header() {
     return (
         <header>
