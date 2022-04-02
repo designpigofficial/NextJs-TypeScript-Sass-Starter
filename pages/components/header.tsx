@@ -8,7 +8,7 @@ export default function Header() {
                 <Link href={`/`}>
                     <a title="Home">
                         <LazyLoadImage effect="blur" src={`/assets/GherkinLogo.svg`} id={`logo`} className="logo" alt={`logo`} width={`100%`} height={`auto`} />
-                        Rakib
+                        Next.js Starter
                     </a>
                 </Link>
                 <div className="buttons">

@@ -66,7 +66,6 @@ export default function Main() {
                   <IonRow>
                     <IonCol size='1' id='mainspacercol' />
                     <IonCol class="mainSpace">
-                      {/* <h1>Testing <span className="bottom">this <span className="primaryVariant">page</span>.</span></h1>    */}
                       <h1>Next.js <span className="bottom">start <span className="primaryVariant">file</span>.</span></h1>   
                       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
                     </IonCol>
