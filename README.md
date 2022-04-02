@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Next.Js Typescript Starter Template
 
-![Screenshot of Home](./public/designs/nextjs-landingpage1.png)
+![Screenshot of Home](./public/designs/nextjs-typescript-starter1.png)
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Next.Js Typescript Starter Template
 
 ## Usage
 
-You can view the deployed application at https://nextjs-landingpage.herokuapp.com/
+You can view the deployed application at https://nextjs-typescript-starter.herokuapp.com/
 
 ## Installation
 
