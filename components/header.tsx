@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@mui/material';
-import { LazyLoadImage } from '../functions';
 import { useEffect, useState } from 'react';
+import { LazyLoadImage } from '../functions';
 export default function Header() {
     const [scrolled, setScrolled] = useState<any>(false);
     useEffect(() => window.addEventListener('scroll', (event?:any) => window.scrollY > 5 ? setScrolled(true) : setScrolled(false)), [setScrolled]);

@@ -3,12 +3,9 @@ import { Button } from "@mui/material";
 import { LazyLoadImage } from "../functions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignOut, faHouseChimneyUser, faUserTie, faCopyright, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
-
 export default function MobileMenu() {
-
     const date = new Date();
     const year = date.getFullYear();
-
     return (
         <div className="menu">
             <div className="innerMenu">

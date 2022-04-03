@@ -6,7 +6,9 @@ export const scrollTop = () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-export const scrollBot = () => {
+export const scrollBottom = () => {
+  // window.scrollTo(0,document.body.scrollHeight); // For Safari
+  // window.scrollTo(0,document.documentElement.scrollHeight); // For Chrome, Firefox, IE and Opera
   document.body.scrollTop = window.innerHeight + 200; // For Safari
   document.documentElement.scrollTop = window.innerHeight + 200; // For Chrome, Firefox, IE and Opera
 }

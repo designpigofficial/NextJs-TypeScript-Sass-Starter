@@ -1,8 +1,6 @@
 import { Button } from '@mui/material';
-// Import the FontAwesomeIcon component
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 export default function Explore() {
     return (
         <div className="explore" title='Explore'>

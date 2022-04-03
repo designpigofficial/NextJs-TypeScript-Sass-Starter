@@ -9,7 +9,7 @@ import TopButton from "../components/topButton";
 import MobileMenu from '../components/mobileMenu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import ScrollToDiscover from '../components/scrollToDiscover';
-import { IonCol, IonGrid, IonRow, scrollBot } from '../functions';
+import { IonCol, IonGrid, IonRow, scrollBottom } from '../functions';
 
 export default function Home() {
   type Anchor = 'left';
@@ -34,18 +34,18 @@ export default function Home() {
     document.querySelectorAll(`.regBtn`).forEach(regBtn => regBtn.addEventListener(`click`, event => {
       switch ((event.target as HTMLButtonElement).id) {
         case `signupBtn`:
-          scrollBot();
+          scrollBottom();
           setForm(`signup`);
           break;
         case `signinBtn`:
-          scrollBot();
+          scrollBottom();
           setForm(`signin`);          
           break;
       }      
     }))
     window.addEventListener('resize', () => setWidth(window.innerWidth));
     return () => window.removeEventListener('resize', () => setWidth(window.innerWidth));
-  }, [width]);
+  }, [setWidth]);
 
   return (
     <div className="home">
