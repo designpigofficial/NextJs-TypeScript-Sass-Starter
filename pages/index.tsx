@@ -34,20 +34,10 @@ export default function Home() {
       setMenu({ ...menu, [anchor]: open });
     };
 
-    const initState = () => {
-      setState({width,height, formSec});
-      console.log(`state`, state);
-    }
-
     const scrollToForm = () => {
-      console.log(form);
-      console.log(formSec.top);
-      document.body.scrollTop = formSec.top; // For Safari 
-      document.documentElement.scrollTop = formSec.top; // For Chrome, Firefox, IE and Opera
-      // document.body.scrollTop = window.innerHeight + 200; // For Safari
-      // document.documentElement.scrollTop = window.innerHeight + 200; // For Chrome, Firefox, IE and Opera
+      document.body.scrollTop = 1250; // For Safari
+      document.documentElement.scrollTop = 1250; // For Chrome, Firefox, IE and Opera
     }
-
 
   useEffect(() => {
     document.querySelectorAll(`.regBtn`).forEach(regBtn => regBtn.addEventListener(`click`, event => {
@@ -65,8 +55,6 @@ export default function Home() {
     const windowEvents = () => {
       setWidth(window.innerWidth);
       setHeight(window.innerHeight);
-      setFormSec((document.querySelector(".form") as HTMLDivElement).getBoundingClientRect());
-      // initState();
     };
     window.addEventListener('resize', () => windowEvents());
     window.addEventListener('scroll', () => windowEvents());
@@ -74,7 +62,7 @@ export default function Home() {
       window.removeEventListener('resize', () => windowEvents());
       window.removeEventListener('scroll', () => windowEvents());
     }
-  }, [setWidth, setHeight, setFormSec, setForm, scrollToForm]);
+  }, [setWidth, setHeight, setForm, scrollToForm]);
 
   return (
     <div className="home">

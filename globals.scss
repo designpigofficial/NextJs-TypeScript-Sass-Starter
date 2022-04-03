@@ -85,9 +85,9 @@ header {
   top: 0;
   z-index: 2;
   width: 100%;
-  padding: 2em;
   display: flex;
   position: fixed;
+  padding: 1.9em 2em;
   align-items: center;
   backdrop-filter: blur(10px);
   transition: var(--transition);
@@ -147,8 +147,8 @@ header {
 }
 
 .form {
+  height: 800px;
   margin: 0 auto;
-  height: 818px;
   max-width: 1122px;
   .innerForm {
     max-width: 1122px;
