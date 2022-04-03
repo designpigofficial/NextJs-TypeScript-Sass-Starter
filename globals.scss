@@ -366,19 +366,19 @@ main {
     }
   }
   .explore {
-    position: absolute;
+    right: 15em;
     width: 200px;
     height: 200px;
-    background: var(--font);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    border-bottom-right-radius: 15px;
     bottom: 215px;
-    right: 15em;
+    display: flex;
     cursor: pointer;
+    position: absolute;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--font);
+    justify-content: center;
     transition: var(--transition);
+    border-bottom-right-radius: 25px;
     &:hover {
       .arrow {
         background: var(--primary) !important;
@@ -389,8 +389,8 @@ main {
       position: relative;
       .arrow {
         position: absolute;
-        bottom: -53px;
-        right: -53px;
+        bottom: -75px;
+        right: -52px;
         border-radius: 100px !important;
         background: var(--bg);
         padding: 0 !important;
@@ -763,8 +763,8 @@ a[title="Home"] {
 
 @media (min-width: 1365px) {
   .mainSpace {
-    left: -10px;
-    top: -70px;
+    left: -70px;
+    top: -35px;
   }
 }
 

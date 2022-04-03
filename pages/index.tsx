@@ -102,7 +102,7 @@ export default function Home() {
                 <IonRow>
                   <IonCol size='1' id='mainspacercol' />
                   <IonCol class="mainSpace">
-                    <h1>Next.js <span className={`bottomText`}>{width > 0 && width < 1165 ? `start` : `starter`} <span className="primaryVariant">file</span>.</span></h1>   
+                    <h1>Next.js <span className={`bottomText`}>{width > 0 && width < 1238 ? `start` : `starter`} <span className="primaryVariant">file</span>.</span></h1>   
                     <p>Created a successful Next.js with Sass/TypeScript starter template ready made for deployment to Heroku with all the packages and dependencies I normally use. Will probably use this to make my new updated portfolio.</p>
                   </IonCol>
                 </IonRow>
