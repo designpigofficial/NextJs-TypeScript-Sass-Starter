@@ -154,8 +154,9 @@ header {
     max-width: 1122px;
     @include centerThis();
     .formElements {
-      width: 80%;
+      width: 75%;
       bottom: -15em;
+      margin: 0 auto;
       position: relative;
       .formLabel {
         font-size: 48px;
