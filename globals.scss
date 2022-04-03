@@ -1,45 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
-  padding: 0;
   margin: 0;
-  background: var(--bg);
+  padding: 0;
   color: var(--font);
+  background: var(--bg);
   overflow-x: hidden !important;
   scroll-behavior: smooth !important;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-family: "Nunito" !important;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
 :root {
-  --font: #2d2b2b;
   --bg: #fffcf7;
   --font: #23211f;
-  --primary: #e56241;
-  --primaryVariant: #f4a261;
-  --primaryShadow: #ae4c33;
-  --secondary: #1daf9e;
-  --secondaryVariant: #264653;
+  --font: #2d2b2b;
   --error: #d25050;
-  --hightlight: #e9c46a;
   --links: #9b9b9b;
-  --footerBGDark: #191716;
-  --footerBGLight: #fff1da;
+  --primary: #e56241;
   --testing: #ec16ff;
+  --secondary: #1daf9e;
+  --hightlight: #e9c46a;
+  --footerBGDark: #191716;
+  --primaryShadow: #ae4c33;
+  --footerBGLight: #fff1da;
+  --primaryVariant: #f4a261;
+  --secondaryVariant: #264653;
   --blackGlass: rgba(0, 0, 0, 0.75);
   --transition: 0.3s cubic-bezier(0.77, 0.2, 0.05, 1) !important;
 }
 
-* {
-  box-sizing: border-box;
+::selection {
+  color: white;
+  background: var(--hightlight);
 }
 
 ::-webkit-scrollbar {
   height: 10px;
-  background: var(--footerBGLight);
   transition: var(--transition);
+  background: var(--footerBGLight);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -48,11 +54,6 @@ body {
   &:hover {
     background: var(--primary) !important;
   }
-}
-
-::selection {
-  background: var(--hightlight);
-  color: white;
 }
 
 @mixin centerThis {
@@ -761,7 +762,8 @@ a[title="Home"] {
 
 @media (min-width: 1365px) {
   .mainSpace {
-    left: -70px;
+    left: -10px;
+    top: -70px;
   }
 }
 

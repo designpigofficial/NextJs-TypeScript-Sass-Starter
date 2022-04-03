@@ -15,7 +15,7 @@ export default function Header() {
                     </a>
                 </Link>
                 <div className="buttons">
-                    <Button id="signinBtn" className="btn regBtn lightBtn" title='Signin'>Sign In</Button>
+                    <Button id="signinBtn" className="btn regBtn lightBtn" title='Signin'>Signin</Button>
                     <Button id="signupBtn" className="btn regBtn" title='Signup'>Signup</Button>
                 </div>
             </div>
