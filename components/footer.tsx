@@ -1,5 +1,5 @@
 export default function Footer() {
   return (
-    <footer>DESIGN / TEST / DEVELOPMENT</footer>
+    <div className="sectionEndText">DESIGN / TEST / DEVELOPMENT</div>
   );
 }

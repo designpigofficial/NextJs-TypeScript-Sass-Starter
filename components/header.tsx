@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@mui/material';
 import { LazyLoadImage } from '../functions';
-export default function Header() {
+export default function Header(props:any) {
     return (
         <header>
             <div className="innerHeader">
@@ -12,8 +12,13 @@ export default function Header() {
                     </a>
                 </Link>
                 <div className="buttons">
-                    <Button className="login lightBtn" title='Login'>Login</Button>
-                    <Button className="signUp" title='Signup'>Signup</Button>
+                    <Link href={`#login`}><Button id="loginBtn" className="btn lightBtn" title='Login'>Login</Button></Link>
+                    <Link href={`#signup`}><Button id="signupBtn" className="btn" title='Signup'>Signup</Button></Link>
+                    {/* {props.form === `signup` ? (
+                        <Link href={`#login`}><Button id="loginBtn" className="btn lightBtn" title='Login'>Login</Button></Link>
+                        ) : (
+                        <Link href={`#signup`}><Button id="signupBtn" className="btn" title='Signup'>Signup</Button></Link>
+                    )} */}
                 </div>
             </div>
         </header>

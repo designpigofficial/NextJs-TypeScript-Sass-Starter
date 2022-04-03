@@ -1,9 +1,50 @@
 import dynamic from 'next/dynamic';
+
+// Helper Functions
 export const getWindowSize = (width:any, setWidth: any) => {
   console.log(`Window Size`, width);
   window.addEventListener('resize', () => setWidth(window.innerWidth));
   return () => window.removeEventListener('resize', () => setWidth(window.innerWidth));
 };
+
+ export const helperFunctions = {
+
+   // Get Current Page State
+   getCurrentPageName: () => {
+       return window.location.hash.slice(window.location.hash.lastIndexOf(`/`)).replace(`/`, ``) as string;
+   },
+
+  // Cut Off Long Strings of Text & Replace with Custom Character... Also known as Truncation
+  cutOffTextAndReplace: (string: string, end: number, replacement: string) => {
+      if (!replacement) {
+          replacement = `...` || `-`;
+      }
+      return string?.length > end ? string?.substring(0, end - 1) + replacement : string;
+  },
+
+  // Capitalize First Letter of Every Word in String
+  capitalizeAllWords: (string: string) => {
+      let words: any = string.split(` `);
+      let capWords = words.map((word:any) => {
+          let capitalizedWord = word?.charAt(0)?.toUpperCase() + word?.slice(1);
+          return capitalizedWord || word;
+      })
+      return capWords.join(` `);
+  },
+  
+  // Remove Duplicate Objects from Array
+  removeDuplicateObjectFromArray: (arrayOfObjects?: any) => {
+      const uniqueArray = arrayOfObjects?.filter((value?: any, index?: any) => {
+          const _value = JSON.stringify(value);
+          return index === arrayOfObjects?.findIndex((obj?: any) => {
+              return JSON.stringify(obj) === _value;
+          });
+      });
+      return uniqueArray;
+  },
+
+}
+
 export const LazyLoadImage = dynamic(async () => {
     const mod = await import('react-lazy-load-image-component');
     return mod.LazyLoadImage;

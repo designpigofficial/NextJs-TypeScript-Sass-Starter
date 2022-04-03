@@ -1,12 +1,12 @@
 import { IonCol, IonGrid, IonLabel, IonRow, LazyLoadImage } from '../functions';
-export default function Signup() {
+export default function Login() {
   return (
-    <div className='form' id="signup">
+    <div className='form' id="login">
       <div className="innerForm">
         <IonGrid className='formElements'>
           <IonRow>
             <IonCol>
-              <IonLabel className="formLabel">Sign Up</IonLabel>
+              <IonLabel className="formLabel">Log In</IonLabel>
             </IonCol>
             <IonCol class="emptyColSpacer" />
           </IonRow>
