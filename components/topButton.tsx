@@ -2,15 +2,11 @@ import { Button } from "@mui/material";
 import{useState, useEffect} from "react";
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { scrollTop } from "../functions";
 
 export default function TopButton() {
 
     const [show, setShow] = useState<any>(false);
-
-    const scrollTop = () => {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
 
     const showButton = () => {
         if (window.scrollY > 50) {

@@ -1,11 +1,15 @@
 import dynamic from 'next/dynamic';
 
 // Helper Functions
-export const getWindowSize = (width:any, setWidth: any) => {
-  console.log(`Window Size`, width);
-  window.addEventListener('resize', () => setWidth(window.innerWidth));
-  return () => window.removeEventListener('resize', () => setWidth(window.innerWidth));
-};
+export const scrollTop = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+export const scrollBot = () => {
+  document.body.scrollTop = window.innerHeight + 200; // For Safari
+  document.documentElement.scrollTop = window.innerHeight + 200; // For Chrome, Firefox, IE and Opera
+}
 
  export const helperFunctions = {
 

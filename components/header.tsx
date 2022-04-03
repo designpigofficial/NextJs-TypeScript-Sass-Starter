@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import { Button } from '@mui/material';
 import { LazyLoadImage } from '../functions';
-export default function Header(props:any) {
+import { useEffect, useState } from 'react';
+export default function Header() {
+    const [scrolled, setScrolled] = useState<any>(false);
+    useEffect(() => window.addEventListener('scroll', (event?:any) => window.scrollY > 5 ? setScrolled(true) : setScrolled(false)), [setScrolled]);
     return (
-        <header>
+        <header className={scrolled ? `scrolledHeader` : `nonscrolledHeader`}>
             <div className="innerHeader">
                 <Link href={`/`}>
                     <a title="Home">
@@ -12,13 +15,8 @@ export default function Header(props:any) {
                     </a>
                 </Link>
                 <div className="buttons">
-                    <Link href={`#login`}><Button id="loginBtn" className="btn lightBtn" title='Login'>Login</Button></Link>
-                    <Link href={`#signup`}><Button id="signupBtn" className="btn" title='Signup'>Signup</Button></Link>
-                    {/* {props.form === `signup` ? (
-                        <Link href={`#login`}><Button id="loginBtn" className="btn lightBtn" title='Login'>Login</Button></Link>
-                        ) : (
-                        <Link href={`#signup`}><Button id="signupBtn" className="btn" title='Signup'>Signup</Button></Link>
-                    )} */}
+                    <Button id="signinBtn" className="btn regBtn lightBtn" title='Signin'>Sign In</Button>
+                    <Button id="signupBtn" className="btn regBtn" title='Signup'>Signup</Button>
                 </div>
             </div>
         </header>
