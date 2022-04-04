@@ -104,3 +104,13 @@ export const IonLabel = dynamic(async () => {
       return mod.IonLabel;
     }, { ssr: false }
   );
+export const IonInput = dynamic(async () => {
+      const mod = await import('@ionic/react');
+      return mod.IonInput;
+    }, { ssr: false }
+  );
+export const IonItem = dynamic(async () => {
+      const mod = await import('@ionic/react');
+      return mod.IonItem;
+    }, { ssr: false }
+  );

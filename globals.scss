@@ -56,15 +56,6 @@ body {
   }
 }
 
-@mixin centerThis {
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  text-align: center;
-  margin-right: auto;
-  position: absolute;
-}
-
 a {
   color: var(--links);
   text-decoration: none;
@@ -147,25 +138,62 @@ header {
 }
 
 .form {
-  height: 800px;
+  height: 730px;
   margin: 0 auto;
   max-width: 1122px;
+  min-height: 730px;
+  background: url(/assets/formBG.png);
   .innerForm {
-    max-width: 1122px;
-    @include centerThis();
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     .formElements {
-      width: 75%;
-      bottom: -15em;
+      width: 80%;
+      height: 100%;
+      display: flex;
       margin: 0 auto;
-      position: relative;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
       .formLabel {
         font-size: 48px;
         font-weight: bold;
       }
+      form {
+        padding: 1em 0;
+        .btn {
+          width: 100%;
+        }
+        .inputItem {
+          display: flex;
+          max-width: 300px;
+          margin: 1.5em auto;
+          flex-direction: column;
+          color: rgba(0,0,0,0.5);
+          ion-label {
+            padding: 5px 0;
+            font-weight: 600;
+            text-align: left;
+          }
+          input {
+            padding: 12px;
+            border-radius: 12px;
+            border: 2px solid rgba(0,0,0,0.5);
+          }
+        }
+      }
     }
     #formBG {
-      @include centerThis();
       max-width: 1122px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      text-align: center;
+      margin-right: auto;
     }
   }
 }
