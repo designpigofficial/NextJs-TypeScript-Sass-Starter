@@ -1,5 +1,2 @@
-export default function Footer() {
-  return (
-    <div className="sectionEndText">DESIGN / TEST / DEVELOPMENT</div>
-  );
-}
+const Footer = () => <div className="sectionEndText">DESIGN / TEST / DEVELOPMENT</div>;
+export default Footer;

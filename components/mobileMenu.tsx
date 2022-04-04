@@ -4,8 +4,6 @@ import { LazyLoadImage } from "../functions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignOut, faHouseChimneyUser, faUserTie, faCopyright, faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 export default function MobileMenu() {
-    const date = new Date();
-    const year = date.getFullYear();
     return (
         <div className="menu">
             <div className="innerMenu">
@@ -50,7 +48,7 @@ export default function MobileMenu() {
                     </a>
                 </div>
                 <div className="siteText copyright" title="Copyright">
-                    <a href="./" className="hoverLink"><FontAwesomeIcon icon={faCopyright} /> {year}</a>
+                    <a href="./" className="hoverLink"><FontAwesomeIcon icon={faCopyright} /> {(new Date as Date).getFullYear()}</a>
                 </div>
             </div>
         </div>

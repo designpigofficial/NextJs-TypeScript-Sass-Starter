@@ -2,24 +2,8 @@ import Link from 'next/link';
 import { Button } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { LazyLoadImage } from '../functions';
-export default function Header({form,setForm}:any) {
+export default function Header(props:any) {
     const [scrolled, setScrolled] = useState<any>(false);
-
-    const scrollToForm = () => {
-        document.body.scrollTop = window.innerHeight + 200; // For Safari
-        document.documentElement.scrollTop = window.innerHeight + 200; // For Chrome, Firefox, IE and Opera
-      }
-  
-      const setSignin = () => {
-        scrollToForm();
-        setForm(`signin`);
-      }
-
-      const setSignup = () => {
-        scrollToForm();
-        setForm(`signup`);
-      }
-    
     useEffect(() => {
         window.addEventListener('scroll', (event?:any) => window.scrollY > 5 ? setScrolled(true) : setScrolled(false));
     }, [setScrolled]);
@@ -33,8 +17,8 @@ export default function Header({form,setForm}:any) {
                     </a>
                 </Link>
                 <div className="buttons">
-                    <Button onClick={(event) => setSignin} id="signinBtn" className="btn regBtn lightBtn" title='Signin'>Signin</Button>
-                    <Button onClick={(event) => setSignup} id="signupBtn" className="btn regBtn" title='Signup'>Signup</Button>
+                    <Button id="signinBtn" className="btn regBtn lightBtn" title='Signin'>Signin</Button>
+                    <Button id="signupBtn" className="btn regBtn" title='Signup'>Signup</Button>
                 </div>
             </div>
         </header>
