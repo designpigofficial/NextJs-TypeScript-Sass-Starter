@@ -789,7 +789,13 @@ a[title="Home"] {
   }
 }
 
-@media (min-width: 1365px) {
+@media (min-width: 1365px) and (max-width: 1792px) {
+  .mainSpace {
+    left: -25px;
+    top: -25px;
+  }
+}
+@media (min-width: 1793px) {
   .mainSpace {
     left: -70px;
     top: -35px;
