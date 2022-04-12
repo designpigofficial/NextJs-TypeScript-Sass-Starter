@@ -1,9 +1,13 @@
 import Link from 'next/link';
+import { appContext } from '../pages';
 import { Button } from '@mui/material';
-import { useEffect, useState } from 'react';
 import { LazyLoadImage } from '../functions';
-export default function Header(props:any) {
+import { useContext, useEffect, useState } from 'react';
+export default function Header() {
     const [scrolled, setScrolled] = useState<any>(false);
+    const app = useContext(appContext);
+    const {width, height, form} = app;
+    console.log(width,height,form);
     useEffect(() => {
         window.addEventListener('scroll', (event?:any) => window.scrollY > 5 ? setScrolled(true) : setScrolled(false));
     }, [setScrolled]);

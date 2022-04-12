@@ -6,10 +6,10 @@ export default function Signup() {
   const trackFormInput = (event:any) => {
     if (event.target.type === `email`) {
       setForm({...form, email: event.target.value});
-      console.log(`email`, form);
+      console.log(`signup email`, form);
     } else {
       setForm({...form, password: event.target.value});
-      console.log(`password`, form);
+      console.log(`signup password`, form);
     }
   };
   return (
